@@ -1,0 +1,17 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@5.0.0
+compiler:
+  solc:
+    remappings:
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@5.0.0'
+dotenv: .env
+wallets:
+  from_key: ${PRIVATE_KEY}
+networks:
+  development:
+    verify: False
+  ganache:
+    verify: False
+  sepolia:
+    verify: True
+
